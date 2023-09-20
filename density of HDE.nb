@@ -1,0 +1,205 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5133,        195]
+NotebookOptionsPosition[      4451,        166]
+NotebookOutlinePosition[      4797,        181]
+CellTagsIndexPosition[      4754,        178]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"a", "[", "t", "]"}], ":=", 
+  RowBox[{
+   SuperscriptBox[
+    RowBox[{"(", 
+     FractionBox[
+      SuperscriptBox["K", "2"], 
+      RowBox[{"24", "\[Alpha]", " ", 
+       SubscriptBox["K", "1"]}]], ")"}], 
+    RowBox[{"1", "/", "8"}]], 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"Sinh", "[", 
+      RowBox[{"4", " ", "t", "*", " ", 
+       SqrtBox[
+        SubscriptBox["K", "1"]]}], "]"}], ")"}], 
+    FractionBox["1", "4"]]}]}]], "Input",
+ CellChangeTimes->{
+  3.6738905723479767`*^9, {3.673890618901639*^9, 3.673890666785378*^9}, {
+   3.6738907007493205`*^9, 3.673890730132001*^9}, {3.673890794541685*^9, 
+   3.673890797442851*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SubscriptBox["a", "1"], "[", "t", "]"}], "=", 
+  RowBox[{
+   SubscriptBox["\[PartialD]", "t"], 
+   RowBox[{"a", "[", "t", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.673890596149338*^9, 3.673890607346978*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"Cosh", "[", 
+    RowBox[{"4", " ", "t", " ", 
+     SqrtBox[
+      SubscriptBox["K", "1"]]}], "]"}], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     FractionBox[
+      SuperscriptBox["K", "2"], 
+      RowBox[{"\[Alpha]", " ", 
+       SubscriptBox["K", "1"]}]], ")"}], 
+    RowBox[{"1", "/", "8"}]], " ", 
+   SqrtBox[
+    SubscriptBox["K", "1"]]}], 
+  RowBox[{
+   SuperscriptBox["2", 
+    RowBox[{"3", "/", "8"}]], " ", 
+   SuperscriptBox["3", 
+    RowBox[{"1", "/", "8"}]], " ", 
+   SuperscriptBox[
+    RowBox[{"Sinh", "[", 
+     RowBox[{"4", " ", "t", " ", 
+      SqrtBox[
+       SubscriptBox["K", "1"]]}], "]"}], 
+    RowBox[{"3", "/", "4"}]]}]]], "Output",
+ CellChangeTimes->{{3.6738906083070335`*^9, 3.6738906320223894`*^9}, 
+   3.673890671670657*^9, {3.673890705078568*^9, 3.673890717750293*^9}, 
+   3.673890804140234*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"H", "[", "t", "]"}], "=", 
+  FractionBox[
+   RowBox[{
+    SubscriptBox["a", "1"], "[", "t", "]"}], 
+   RowBox[{"a", "[", "t", "]"}]]}]], "Input",
+ CellChangeTimes->{{3.673890990617899*^9, 3.673891013920231*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Coth", "[", 
+   RowBox[{"4", " ", "t", " ", 
+    SqrtBox[
+     SubscriptBox["K", "1"]]}], "]"}], " ", 
+  SqrtBox[
+   SubscriptBox["K", "1"]]}]], "Output",
+ CellChangeTimes->{3.6738910163493695`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SubscriptBox["H", "1"], "[", "t", "]"}], "=", 
+  RowBox[{
+   SubscriptBox["\[PartialD]", "t"], 
+   RowBox[{"H", "[", "t", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.6738910921367044`*^9, 3.6738911059064913`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "4"}], " ", 
+  SuperscriptBox[
+   RowBox[{"Csch", "[", 
+    RowBox[{"4", " ", "t", " ", 
+     SqrtBox[
+      SubscriptBox["K", "1"]]}], "]"}], "2"], " ", 
+  SubscriptBox["K", "1"]}]], "Output",
+ CellChangeTimes->{3.673891108408634*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"\[Rho]", "[", "t", "]"}], "=", 
+  RowBox[{"Simplify", "[", 
+   RowBox[{"3", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"\[Alpha]", "*", 
+       RowBox[{
+        SubscriptBox["H", "1"], "[", "t", "]"}]}], "+", 
+      SuperscriptBox[
+       RowBox[{"H", "[", "t", "]"}], "2"]}], ")"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.673891354154689*^9, 3.6738914097408676`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["3", "2"], " ", 
+  RowBox[{"(", 
+   RowBox[{"1", "-", 
+    RowBox[{"8", " ", "\[Alpha]"}], "+", 
+    RowBox[{"Cosh", "[", 
+     RowBox[{"8", " ", "t", " ", 
+      SqrtBox[
+       SubscriptBox["K", "1"]]}], "]"}]}], ")"}], " ", 
+  SuperscriptBox[
+   RowBox[{"Csch", "[", 
+    RowBox[{"4", " ", "t", " ", 
+     SqrtBox[
+      SubscriptBox["K", "1"]]}], "]"}], "2"], " ", 
+  SubscriptBox["K", "1"]}]], "Output",
+ CellChangeTimes->{{3.6738913890946875`*^9, 3.673891411130947*^9}}]
+}, Open  ]]
+},
+WindowSize->{707, 505},
+WindowMargins->{{321, Automatic}, {Automatic, 64}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 679, 21, 54, "Input"],
+Cell[CellGroupData[{
+Cell[1261, 45, 246, 7, 31, "Input"],
+Cell[1510, 54, 877, 29, 73, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2424, 88, 246, 7, 49, "Input"],
+Cell[2673, 97, 233, 8, 37, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2943, 110, 250, 7, 31, "Input"],
+Cell[3196, 119, 274, 9, 38, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3507, 133, 411, 12, 33, "Input"],
+Cell[3921, 147, 514, 16, 47, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
